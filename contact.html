@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>Home</title>
+	<meta charset="utf-8">
+	<meta name = "format-detection" content = "telephone=no" />
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/camera.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-migrate-1.2.1.js"></script>
+	<script src='js/camera.js'></script>
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/jquery.stellar.js"></script>
+	<script src="js/script.js"></script>
+	<!--[if (gt IE 9)|!(IE)]><!-->
+	<script src="js/jquery.mobile.customized.min.js"></script>
+	<script src="js/wow.js"></script>
+	<script>
+		$(document).ready(function () {
+			if ($('html').hasClass('desktop')) {
+				new WOW().init();
+			}
+		});
+	</script>
+	<!--<![endif]-->
+	<!--[if lt IE 8]>
+	<div style=' clear: both; text-align:center; position: relative;'>
+	 <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+		 <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+	 </a>
+	</div>
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+	<![endif]-->
+	</head>
+<body class="index">
+<!--==============================header=================================-->
+<header id="header">
+	<div id="stuck_container">
+		<div class="container">
+			<div class="row">
+				<div class="grid_12">
+					<!--<h1><a href="index.html">.</a></h1>-->
+					<img src="images/logo.png" alt="some_text" style="width:180px;">
+					<nav>
+						<ul class="sf-menu">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="index-1.html">PhD</a></li>
+							<li><a href="index-2.html">Research</a></li>
+							<li><a href="https://github.com/">Software & Data</a></li>
+							<li><a href="index-3.html">Personal</a></li>
+							<li><a href="http://thatsstatistics.blogspot.co.uk/">Blog</a></li>
+							<li class="current"><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<!--=======content================================-->
+
+<section id="content">
+	<div class="container">
+		<div class="row" align="center">
+			<div align="center">
+<br>
+<h3><span>Conctact Information</span></h3>				
+<table align="center"  cellspacing="10" cellpadding="10">
+<br> <br> 
+  <tr>
+    <td>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2375.0256108482545!2d-2.2336525841569634!3d53.46800238000465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb1921c3f83b9%3A0x78fabbc63d349e5a!2sAlan+Turing+Building!5e0!3m2!1ses-419!2suk!4v1452356193521" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </td>
+    <td>
+		<p  align="center">
+		<img src="images/location.png"><br>
+		<p align="center">
+		<font face="verdana" color="black">
+		Address and Telephone <br>
+		Office 1.122 <br>
+		Alan Turing Building <br>
+		School of Mathematics <br>
+		The University of Manchester <br>
+		M13 9PL, UK <br>
+		EMail: diego.perezruiz (at) manchester.ac.uk<br> 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</font>
+		</p>
+		</p>
+	</td>
+    <td>
+		<p align="center"><a href="mailto:diego.perezruiz@manchester.ac.uk">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/mail.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
+		<font face="verdana" color="black">EMail</font>
+		<br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/dapr12">
+		<img src="images/github.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<br>
+		<font face="verdana" color="black">GitHub</font>
+		</p>
+	</td>
+	<td>
+		<p align="center"><a href="https://www.facebook.com/dapr12">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/facebook.png">
+		</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<br>
+		<font face="verdana" color="black">Facebook</font>
+		<br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/dapr12">
+		<img src="images/twitter.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+		<font face="verdana" color="black">Twitter</font>
+		</p>
+	</td>
+	</tr>
+			
+</table>
+<br>
+<br>
+<h3><span>Send me a Message</span></h3>	
+<br>
+<table align="center"  cellspacing="10" cellpadding="10">
+  <tr>
+    <td>
+	..
+	</td>
+	</tr>
+
+  <tr wideh="300">
+    <td wideh="300">
+<?php
+$action=$_REQUEST['action'];
+if ($action=="")    /* display the contact form */
+    {
+    ?>
+    <form  action="" method="POST" enctype="multipart/form-data">
+    <input type="hidden" name="action" value="submit">
+    Your name:<br>
+    <input name="name" type="text" value="" size="30"/><br>
+    Your email:<br>
+    <input name="email" type="text" value="" size="30"/><br>
+    Your message:<br>
+    <textarea name="message" rows="7" cols="30"></textarea><br>
+    <input type="submit" value="Send email"/>
+    </form>
+    <?php
+    } 
+else                /* send the submitted data */
+    {
+    $name=$_REQUEST['name'];
+    $email=$_REQUEST['email'];
+    $message=$_REQUEST['message'];
+    if (($name=="")||($email=="")||($message==""))
+        {
+        echo "All fields are required, please fill <a href=\"\">the form</a> again.";
+        }
+    else{        
+        $from="From: $name<$email>\r\nReturn-path: $email";
+        $subject="Message sent using your contact form";
+        mail("fer@hotmail.com", $subject, $message, $from);
+        echo "Email sent!";
+        }
+    }  
+?>
+	</td>
+</tr>
+			
+</table>
+<br><br>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--=======footer=================================-->
+<footer id="footer">
+	<div class="container">
+		<div class="row" align="center">
+			<div align="center">
+				<a rel="nofollow" href="http://www.manchester.ac.uk/" target="_blank"><font face="verdana" color="white"> © <span id="copyright-year"></span> | <b>The University of Manchester</b></a></font>
+			</div>
+		</div>
+	</div>
+	
+</footer>
+<script>
+	jQuery(function(){
+		jQuery('#camera_wrap').camera({
+			height: '34.58333333333333%',
+			thumbnails: false,
+			pagination: true,
+			fx: 'simpleFade',
+			loader: 'none',
+			hover: false,
+			navigation: false,
+			playPause: false,
+			minHeight: "139px",
+		});
+	});
+</script>
+<script>
+	$(document).ready(function() {
+		$(".owl-carousel").owlCarousel({
+			navigation: true,
+			pagination: false,
+			items : 3,
+			itemsDesktop : [1199,3],
+			itemsDesktopSmall : [979,3],
+			itemsTablet: [750,1],
+			itemsMobile : [479,1],
+			navigationText: false
+		});
+	});
+</script>
+<script>
+	$(document).ready(function() { 
+			if ($('html').hasClass('desktop')) {
+				$.stellar({
+					horizontalScrolling: false,
+					verticalOffset: 20,
+					resposive: true,
+					hideDistantElements: true,
+				});
+			}
+		});
+</script>
+</body>
+</html>
